@@ -1,120 +1,31 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>elo vuaro</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Cube</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      overflow: hidden;
+      background-color: #f0f0f0;
+    }
+    #cube {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
 </head>
 <body>
-    <h1>éloïse vuaroqueaux</h1>
-
-<div id="floating-text" class="floating-text">
-   Que reste-t-il quand tout s'effrite, quand le corps se fragmente pour  dispa aître ? Un être en quête de guérison s'hybride lentement, face à une matière énigmatique qui le transperce peu à peu. Ce dialogue entre l'humainx et la matière prend vie à travers une installation plastique et sonore. 
-</div>
-<!-- Bouton image -->
-<button id="open-image-btn">installation</button>
-<!-- Modal pour afficher l'image -->
-<div id="image-modal" class="modal">
-    <div class="modal-content">
-        <span class="close-btn">&times;</span>
-        <img src="image1.jpg" alt="Image affichée" class="modal-image">
-    </div>
-</div>
-
-<button id="sound-btn">Son</button>
-<audio id="audio" src="audio1.wav"></audio>
-<!-- Bouton vidéo-->
-<button id="video-btn">Vidéo</button>
-<div id="video-modal" class="modal1">
-    <div class="modal1-content">
-        <span class="close-btn">&times;</span>
-        <video controls id="video-player">
-            <source src="video texte.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas les vidéos HTML5.
-        </video>
-    </div>
-</div>
-
-<!-- Zone pour afficher le texte -->
-<div id="text-display" style="margin-top: 20px; font-size: 18px; font-weight: bold;"></div>
-
-<!-- Bouton Reset -->
-<button id="reset-btn">Reset</button>
-
-
-<!-- Bouton texte -->
-<button id="show-text-btn">texte</button>
-
-    <div class="image-container">
-        <img src="image1.jpg" alt="Image 1" class="image">
-        <p class="caption">Légende pour Image 1</p>
-    </div>
-    <div class="image-container">
-        <img src="image2.jpg" alt="Image 2" class="image">
-        <p class="caption">Légende pour Image 2</p>
-    </div>
-    <div class="image-container">
-        <img src="image3.jpg" alt="Image 3" class="image">
-        <p class="caption">Légende pour Image 3</p>
-    </div>
-    <div class="image-container">
-        <img src="image4.jpg" alt="Image 1" class="image">
-        <p class="caption">Légende pour Image 1</p>
-    </div>
-    <div class="image-container">
-        <img src="image5.jpg" alt="Image 1" class="image">
-        <p class="caption">Légende pour Image 1</p>
-    </div>
-    <div class="image-container">
-        <img src="image6.jpg" alt="Image 2" class="image">
-        <p class="caption">Légende pour Image 2</p>
-    </div>
-    <div class="image-container">
-        <img src="image7.jpg" alt="Image 3" class="image">
-        <p class="caption">Légende pour Image 3</p>
-    </div>
-    <div class="image-container">
-        <img src="image8.jpg" alt="Image 1" class="image">
-        <p class="caption">Légende pour Image 1</p>
-    </div>
-      <div class="image-container">
-        <img src="image9.jpg" alt="Image 1" class="image">
-        <p class="caption">Légende pour Image 1</p>
-    </div>
-    <div class="image-container">
-        <img src="image10.jpg" alt="Image 2" class="image">
-        <p class="caption">Légende pour Image 2</p>
-    </div>
-    <div class="image-container">
-        <img src="image11.jpg" alt="Image 3" class="image">
-        <p class="caption">Légende pour Image 3</p>
-    </div>
-    <div class="image-container">
-        <img src="image12.jpg" alt="Image 1" class="image">
-        <p class="caption">Légende pour Image 1</p>
-    </div>
-    <div class="image-container">
-        <img src="image13.jpg" alt="Image 1" class="image">
-        <p class="caption">Légende pour Image 1</p>
-    </div>
-    <div class="image-container">
-        <img src="image14.jpg" alt="Image 2" class="image">
-        <p class="caption">Légende pour Image 2</p>
-    </div>
-    <div class="image-container">
-        <img src="image15.jpg" alt="Image 3" class="image">
-        <p class="caption">Légende pour Image 3</p>
-    </div>
-    <div class="image-container">
-        <img src="image16.jpg" alt="Image 1" class="image">
-        <p class="caption">Légende pour Image 1</p>
-    </div>
-
-
- <footer>
-        <p><a href="https://www.instagram.com/elo.vuaro/" target="_blank">instagram</a></p>
-    </footer>
-     <script src="script1.js"></script>
+  <h1>Cube Test</h1>
+  <div id="cube"></div>
 </body>
 </html>
+

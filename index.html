@@ -3,83 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elo Vuaro</title>
+    <title>éloïse vuaroqueaux</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1><a href="index.html">éloïse vuaroqueaux</a></h1>
 
-    <h1><a href="test.html">In the modern world</a></h1>
+    <!-- Navigation principale -->
+    <nav>
+        <button><a href="index.html">In the modern world</a></button>
+        <button><a href="test galerie.html">Vallée de la Soude</a></button>
+        <button><a href="about.html">À propos</a></button> <!-- Lien vers about.html -->
+    </nav>
 
-    <div id="floating-text" class="floating-text">
-        Que reste-t-il quand tout s'effrite, quand le corps se fragmente pour disparaître ? Un être en quête de guérison s'hybride lentement, face à une matière énigmatique qui le transperce peu à peu. Ce dialogue entre l'humain et la matière prend vie à travers une installation plastique et sonore. 
-    </div>
+    <!-- Zone pour afficher le texte -->
+    <div id="text-display" style="margin-top: 20px; font-size: 18px; font-weight: bold;"></div>
 
-    <!-- Bouton image -->
-    <button id="open-image-btn">Installation</button>
-    <div id="image-modal" class="modal">
-        <div class="modal-content3">
-            <span class="close-btn">&times;</span>
-            <button id="prev-btn" class="nav-btn">&lt;</button>
-            <img id="gallery-image" src="IMAGE0.jpg" alt="Image de la galerie" class="modal-image2">
-            <button id="next-btn" class="nav-btn">&gt;</button>
+    <!-- Floating text / informations -->
+    <div id="floating-container">
+        <div class="floating-text">
+            Eloïse Vuaroqueaux is a Paris-based artist working with photography. After graduating from the Sorbonne with a degree in Geography, she entered the Photography Master's program at the Ecole Nationale Supérieure Louis-Lumière in 2022. Her photographic work is based on a hybrid exploration. She develops an experimental universe in which she manipulates digital material to create new worlds. Interested in the concept of healing, she creates metal sculptures in which she integrates 3D materials evoking bodies. Through this approach, she seeks to understand how the use of scientific imagery in contemporary art feeds our imagination.
+        </div>
+        <div class="floating-text">
+            <a href="mailto:eloise.vuaroqueaux@gmail.com">eloise.vuaroqueaux@gmail.com</a>
+        </div>
+        <div class="floating-text">
+            6b - <i>In the modern world</i> - December 2024.<br>
+            10th Conches-en-Ouche Photography Biennale - October 2024.<br>
+            Galerie du Crous / CDC - <i>Bureau-Témoin</i> - May 2024.
         </div>
     </div>
-
-    <!-- Bouton son -->
-    <button id="sound-btn">Son</button>
-    <audio id="audio" src="audio1.wav"></audio>
-
-    <!-- Boutons vidéo -->
-    <button id="video-btn-1">Vidéo</button>
-    <div id="video-modal-1" class="modal1">
-        <div class="modal1-content">
-            <span class="close-btn">&times;</span>
-            <video controls id="video-player-1">
-                <source src="video.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
-
-    <button id="video-btn-2">Édition</button>
-    <div id="video-modal-2" class="modal1">
-        <div class="modal1-content">
-            <span class="close-btn">&times;</span>
-            <video controls id="video-player-2">
-                <source src="video2.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
-
-    <!-- Boutons utilitaires -->
-    <button id="reset-btn1">Reset</button>
-    <button id="show-text-btn"><a href="about.html">À propos</a></button>
-    <button id="home-btn" onclick="window.location.href='test.html'">Accueil</button>
 
     <!-- Galerie d'images -->
     <div class="image-container">
-        <img src="image1.jpg" alt="Image 1" class="image">
+        <img src="propos1.png" alt="Image 1" class="image">
         <p class="caption">Légende pour Image 1</p>
     </div>
     <div class="image-container">
-        <img src="image2.jpg" alt="Image 2" class="image">
+        <img src="propos2.png" alt="Image 2" class="image">
         <p class="caption">Légende pour Image 2</p>
     </div>
     <div class="image-container">
-        <img src="image3.jpg" alt="Image 3" class="image">
+        <img src="propos8.png" alt="Image 3" class="image">
         <p class="caption">Légende pour Image 3</p>
     </div>
-    <!-- ... répéter les images restantes de manière identique ... -->
 
+    <!-- Compteur et footer -->
     <div id="click-counter">0</div>
 
     <footer>
         <p><a href="https://www.instagram.com/elo.vuaro/" target="_blank">@elo.vuaro</a></p>
     </footer>
 
-    <button class="return-button" onclick="window.location.href='test.html';">&lt;&lt;</button>
-
     <script src="script1.js"></script>
+    <button class="return-button" onclick="window.location.href='index.html';"><< Retour</button>
 </body>
 </html>
-
 

@@ -1,21 +1,30 @@
-
 <style>
     body {
         margin: 0;
         padding: 0;
         height: 100vh;
         overflow: hidden;
-        background-color: #222;
-        font-family: 'Press Start 2P', cursive; /* Exemple de police punk */
-        color: #fff;
         position: relative;
+        display: flex;
+        justify-content: center; /* Centre le contenu horizontalement */
+        align-items: center; /* Centre le contenu verticalement */
+        height: 100vh; /* Prend toute la hauteur de la fenêtre */
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 20px;
         text-align: center;
         letter-spacing: 5px;
         margin-top: 30px;
+    }
+    h1 a {
+
+        text-decoration: none; /* Supprime le soulignement */
+    }
+    
+    a {
+        color: black; /* Couleur du texte */
+        text-decoration: none; /* Supprime le soulignement */
     }
 
     .image-container {
@@ -33,7 +42,6 @@
     pointer-events: none; /* Empêche toute interaction par la souris */
 }
 
-    }
 
     .image:active {
         cursor: grabbing;
@@ -65,22 +73,32 @@
 
     footer a {
         text-decoration: none;
+        color:black;
     }
 
     footer a:hover {
         text-decoration: underline;
     }
-    /* Ajouter une texture de fond optionnelle */
-    body {
-        background: url('punk-texture.jpg') repeat;
-    }
 
+    .image-container1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        transform: translateY(-30px); /* Déplace le conteneur vers le haut */
+    }
+    
+   
+.image1 {
+    max-width: 50%;
+    cursor: pointer; /* Indique que l'élément est cliquable */
+}
 
 #floating-text {
     position: absolute;
     max-width: 300px; /* Largeur maximale du bloc */
     word-wrap: break-word; /* Casser les mots si nécessaire */
-    padding: 10px;
+    padding: 20px;
     cursor: grab;
     font-size: 16px;
     text-align: justify; /* Alignement justifié pour un rendu esthétique */
@@ -115,6 +133,10 @@
 .modal-image {
     max-width: 30%;
     max-height: 30%;
+}
+.modal-image2 {
+    max-width: 50%;
+    max-height: 50%;
 }
 
 .close-btn {
@@ -160,7 +182,6 @@ video {
     display: block;
     width: 60%; /* Définit la largeur à 60% de l'écran */
     max-width: 800px; /* Limite la largeur maximale */
-    transform: rotate(-90deg); /* Rotation de 90° antihoraire */
     transform-origin: center; /* Fixe le point de rotation au centre de la vidéo */
     height: auto; /* Conserve les proportions */
     border: none; /* Pas de bordure */
@@ -183,5 +204,115 @@ video {
 .close-btn:hover {
     background: red;
 }
+#click-counter {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    z-index: 1000; /* S'assure que le compteur reste au-dessus des autres éléments */
+}
+#texte {
+    position: absolute;
+    top: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, -50%); /* Centrage parfait avec un décalage de -50% */
+    font-size: 16px;
+    margin: 50px;
+    padding: 10px;
+    max-width: 350px;
+    word-wrap: break-word;
+    cursor: grab; /* Le curseur change pour indiquer que l'élément est déplaçable */
+    text-align: justify;
+}
 
+/* date */
+#date {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#floating-container {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.floating-text {
+    max-width: 400px;
+    word-wrap: break-word;
+    padding: 10px;
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.modal-content3 {
+    position: relative;
+    width: 80vw; /* Largeur fixe */
+    height: 80vh; /* Hauteur fixe */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.modal-image2 {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.return-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000; /* Pour s'assurer qu'il soit au-dessus des autres éléments */
+}
 </style>

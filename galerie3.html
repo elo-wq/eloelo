@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vallée de la Soude - elo vuaro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1><a href="galerie.html">Vallée de la Soude</a></h1>
+
+    <div class="content-wrapper">
+        <div class="sidebar">
+            <button class="button-1" id="video-btn">édition</button>
+            <br><br>
+            <button class="button-2"><a href="index.html">In the modern world</a></button>
+        </div>
+
+        <div class="main-content">
+            <div class="image-slider">
+                <img src="images/planche0.jpg" alt="Image 1">
+                <img src="images/planche1.jpg" alt="Image 2">
+                <img src="images/planche2.jpg" alt="Image 3">
+                <img src="images/planche3.jpg" alt="Image 4">  
+                <img src="images/planche4.jpg" alt="Image 5">      
+                <img src="images/planche5.jpg" alt="Image 6">  
+                <img src="images/planche6.jpg" alt="Image 7">   
+                <img src="images/planche7.jpg" alt="Image 8">    
+                <img src="images/planche8.jpg" alt="Image 9">       
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal vidéo -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video controls>
+                <source src="videos/livre_charleroi.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+        </div>
+    </div>
+
+    <footer>
+        <p><a href="https://www.instagram.com/elo.vuaro/" target="_blank">@elo.vuaro</a></p>
+    </footer>
+
+    <script src="script1.js"></script>
+    <button class="return-button" onclick="window.location.href='index.html';"><< Retour</button>
+</body>
+</html>
